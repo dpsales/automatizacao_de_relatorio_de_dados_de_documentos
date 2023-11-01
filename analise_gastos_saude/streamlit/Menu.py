@@ -10,7 +10,7 @@ from st_pages import Page, Section, add_page_title, show_pages
 from st_pages import Page, Section, add_page_title, show_pages
 show_pages(
         [
-        Page("/pages/1_Home.py", "Home", "🏠"),
+        Page("pages/1_Home.py", "Home", "🏠"),
         # Can use :<icon-name>: or the actual icon
         #Page("pages/example_one.py", "Example One", ":books:"),
         # Since this is a Section, all the pages underneath it will be indented
@@ -18,10 +18,10 @@ show_pages(
         #Section(name="Automação SEI", icon="📖"),
         #Page("pages/1_2_SEI_Exemplo.py", icon="📖"),
         # The pages appear in the order you pass them
-        Page("/pages/1_Projeto_SEI.py", "Projeto SEI", "📖"),
-        Page("/pages/2_SEI_Exemplo.py", "HTML para DataFrame", "📖"),
-        Page("/pages/3_SEI_Estados.py", "Mapa de Requisições", "📖"),
-        Page("/pages/4_SEI_Analise.py", "Análises da Requisições", "📖"),
+        Page("app/pages/1_Projeto_SEI.py", "Projeto SEI", "📖"),
+        Page("streamlit/pages/2_SEI_Exemplo.py", "HTML para DataFrame", "📖"),
+        Page("pages/3_SEI_Estados.py", "Mapa de Requisições", "📖"),
+        Page("/app/pages/4_SEI_Analise.py", "Análises da Requisições", "📖"),
         #Section(name="Gastos Saúde", icon=":hospital:"),
         # Will use the default icon and name based on the filename if you don't
         # pass them
