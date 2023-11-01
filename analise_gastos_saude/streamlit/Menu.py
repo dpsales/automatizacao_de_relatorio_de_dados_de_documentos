@@ -10,7 +10,7 @@ from st_pages import Page, Section, add_page_title, show_pages
 from st_pages import Page, Section, add_page_title, show_pages
 show_pages(
         [
-        Page("pages/1_Home.py", "Home", "🏠"),
+        Page("app/pages/1_Home.py", "Home", "🏠"),
         # Can use :<icon-name>: or the actual icon
         #Page("pages/example_one.py", "Example One", ":books:"),
         # Since this is a Section, all the pages underneath it will be indented
