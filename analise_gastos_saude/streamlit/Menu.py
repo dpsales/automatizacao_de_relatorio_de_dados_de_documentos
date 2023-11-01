@@ -3,7 +3,7 @@ import streamlit as st
 #import pandas as pd
 #import plotly.express as px
 #from streamlit_option_menu import option_menu
-from st_pages import Page, Section, add_page_title, show_pages
+#from st_pages import Page, Section, add_page_title, show_pages
 #"Projeto Final do Bootcamp de Análise de Dados - ENAP "
 
 #with st.echo("below"):
