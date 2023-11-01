@@ -18,7 +18,7 @@ show_pages(
         #Section(name="Automação SEI", icon="📖"),
         #Page("pages/1_2_SEI_Exemplo.py", icon="📖"),
         # The pages appear in the order you pass them
-        Page("app/pages/1_Projeto_SEI.py", "Projeto SEI", "📖"),
+        Page("pages/1_Projeto_SEI.py", "Projeto SEI", "📖"),
         Page("pages/2_SEI_Exemplo.py", "HTML para DataFrame", "📖"),
         Page("pages/3_SEI_Estados.py", "Mapa de Requisições", "📖"),
         Page("pages/4_SEI_Analise.py", "Análises da Requisições", "📖"),
