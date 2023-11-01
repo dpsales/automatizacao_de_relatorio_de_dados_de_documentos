@@ -20,8 +20,6 @@ show_pages(
         # The pages appear in the order you pass them
         Page("./analise_gastos_saude/streamlit/pages/1_Projeto_SEI.py", "Projeto SEI", "📖"),
         Page("./analise_gastos_saude/streamlit/pages/2_SEI_Exemplo.py", "HTML para DataFrame", "📖"),
-        Page("./analise_gastos_saude/streamlit/pages/2_SEI_Exemplo.py", "HTML para DataFrame", "📖"),
-        Page("./analise_gastos_saude/streamlit/pages/2_SEI_Exemplo.py", "HTML para DataFrame", "📖"),
         Page("./analise_gastos_saude/streamlit/pages/3_SEI_Estados.py", "Mapa de Requisições", "📖"),
         Page("./analise_gastos_saude/streamlit/pages/4_SEI_Analise.py", "Análises da Requisições", "📖"),
         #Section(name="Gastos Saúde", icon=":hospital:"),
@@ -29,7 +27,7 @@ show_pages(
         # pass them
         Page("./analise_gastos_saude/streamlit/pages/1_Projeto_Saude.py", icon=":hospital:"),
         Page("./analise_gastos_saude/streamlit/pages/2_Estados.py", icon=":hospital:"),
-        Page("./analise_gastos_saude/streamlit/pages/3_Municipios.py", icon=":hospital:"),
+        Page("./analise_gastos_saude/streamlit/pages/3_Municipios.py", 'Mapa', icon=":hospital:"),
         Page("./analise_gastos_saude/streamlit/pages/4_Correlacao.py", icon=":hospital:"),
         Page("./analise_gastos_saude/streamlit/pages/6_Regressao.py", icon=":hospital:"),
         # You can also pass in_section=False to a page to make it un-indented

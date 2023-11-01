@@ -3,9 +3,9 @@ import pandas as pd
 import pickle
 
 
-st.set_page_config(page_title="Municípios", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="Mapas", page_icon="🏥", layout="wide")
 
-st.title('_Municípios_')
+st.title('_Mapas_')
 st.markdown("---")
 
 figura1 = ''
