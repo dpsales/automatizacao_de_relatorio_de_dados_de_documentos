@@ -2,16 +2,17 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.set_page_config(page_title="Mapas de Gastos Hospitalares por Estados", page_icon="🏥", layout="wide")
 
-st.title('_Gastos Hospitalares UF_')
+st.set_page_config(page_title="Mapas", page_icon="🏥", layout="wide")
+
+st.title('_Mapas_')
 st.markdown("---")
 
 figura1 = ''
 figura2 = ''
 
-arquivo1 = './fig2.pkl'
-arquivo2 = './fig.pkl'
+arquivo1 = './analise_gastos_saude/streamlit/fig2.pkl'
+arquivo2 = './analise_gastos_saude/streamlit/fig.pkl'
 
 col1, col2 = st.columns(2)
 

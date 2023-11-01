@@ -2,16 +2,14 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-
 st.set_page_config(page_title="Correlação", page_icon="🏥", layout="wide")
 
 st.title('_Análise de Correlação_ :hospital:')
 st.markdown("---")
 
-
 @st.cache_data
 def gerar_df():
-    df = pd.read_excel('./analise_gastos_saude/streamlit/data/variaveis_uf_ano.xlsx',
+    df = pd.read_excel('./data/variaveis_uf_ano.xlsx',
                        engine='openpyxl',
                        usecols='A:F',
                        nrows=244)
@@ -23,7 +21,6 @@ nomes_originais = ['Gastos Hospitalares', 'Gastos Hosp. per capita']
 
 anos = ['Escolha o ano', '2014', '2015', '2016',
         '2017', '2018', '2019', '2020', '2021', '2022']
-
 
 with st.sidebar:
     st.sidebar.header("Nível de Agregação: UF")
@@ -37,7 +34,6 @@ mapeamento = dict(zip(nomes_originais, nomes_alvo))
 nome_alvo = mapeamento.get(fvariavel, fvariavel)
 df_filtro = df[nome_alvo]
 
-# filtrando ano
 # filtrando ano
 if fano != anos[0]:
     dados_usuario = df.loc[(df['ano'] == int(fano))]

@@ -1,16 +1,39 @@
 import streamlit as st
 import pandas as pd
+#import matplotlib.pyplot as plt
+#import plotly.express as px
 import folium
+#import numpy as np
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 import branca.colormap
 
-st.set_page_config(page_icon=":large_blue_square:",
-                   layout="wide")
+#from ..library import plot
+
+
+# st.set_page_config(page_title="Analise dos dados do SEI", page_icon=":large_blue_square:", layout="wide")
 st.header(':blue[Automação de Relatório de dados de Documentos]', divider='rainbow')
-st.title("Litotecas com maior volume de Requisições")
+st.title("Litotecas onde teve mais Requisições")
 st.caption("Projeto Final do Bootcamp de Análise de Dados - ENAP :game_die: :game_die: :game_die:")
 st.caption("Turma Exclusiva para Mulheres - Outubro/2023 :cherry_blossom:")
+# st.subheader('Análise dos dados do SEI :large_blue_square:', divider='rainbow')
+#st.sidebar('auto')
+
+# st.cache_data
+# def gerar_df():
+#     df = pd.read_excel('./data/rema.xlsx',
+#                        engine='openpyxl')
+#                        #usecols='I:W')
+#                        #nrows=244)
+#     return df
+
+# df_excel = gerar_df()
+
+# # df = pd.DataFrame(
+# #      / [50, 50] + [37.76, -122.4],
+# #     columns=['lat', 'lon'])
+
+# st.map(df_excel)
 
 litotecas_sgb = ['Litoteca Regional de Araraquara - LiAr', 'Litoteca Regional de Belém - Pará', 'Litoteca de Caçapava do Sul - Rio Grande do Sul',
                  'Litoteca Regional de Caeté - Minas Gerais', 'Litoteca Regional de Feira de Santana – Bahia', 'Litoteca Regional de Goiânia - Goiás',

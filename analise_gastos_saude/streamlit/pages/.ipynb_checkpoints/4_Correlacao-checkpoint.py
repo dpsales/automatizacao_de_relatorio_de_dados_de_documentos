@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# st.set_page_config(page_title="Dispersão", page_icon="🏥", layout="wide")
 
-st.title('_Dispersão_ :hospital:')
+st.set_page_config(page_title="Correlação", page_icon="🏥", layout="wide")
+
+st.title('_Análise de Correlação_ :hospital:')
 st.markdown("---")
 
 
@@ -31,7 +32,7 @@ with st.sidebar:
     fano = st.selectbox('Selecione o Ano:', options=anos)
 
 # filtrando a variável desejada
-nomes_alvo = ['gastos', 'gastos_percapita','mortalidade', 'valor_emendas']
+nomes_alvo = ['gastos', 'gastos_percapita', 'mortalidade', 'valor_emendas']
 mapeamento = dict(zip(nomes_originais, nomes_alvo))
 nome_alvo = mapeamento.get(fvariavel, fvariavel)
 df_filtro = df[nome_alvo]
@@ -46,11 +47,11 @@ else:
 dados_usuario['text'] = dados_usuario['uf']
 
 fig_scatter_mortalidade = px.scatter(dados_usuario, x='mortalidade', y=nome_alvo, title=fvariavel, template='plotly_dark', text='text').update_layout(
-        title_x=0.5).update_xaxes(title='Mortalidade', showgrid=False).update_yaxes(
-                title=fvariavel, showgrid=False)
-st.plotly_chart(fig_scatter_mortalidade, use_container_width=True)
+    title_x=0.5).update_xaxes(title='Mortalidade', showgrid=False).update_yaxes(
+    title=fvariavel, showgrid=False)
+st.plotly_chart(fig_scatter_mortalidade, theme=None, use_container_width=True)
 
 fig_scatter_emendas = px.scatter(dados_usuario, x='valor_emendas', y=nome_alvo, title=fvariavel, template='plotly_dark', text='text').update_layout(
-        title_x=0.5).update_xaxes(title='Emendas Parlamentares', showgrid=False).update_yaxes(
-                title=fvariavel, showgrid=False)
-st.plotly_chart(fig_scatter_emendas, use_container_width=True)
+    title_x=0.5).update_xaxes(title='Emendas Parlamentares', showgrid=False).update_yaxes(
+    title=fvariavel, showgrid=False)
+st.plotly_chart(fig_scatter_emendas, theme=None, use_container_width=True)
