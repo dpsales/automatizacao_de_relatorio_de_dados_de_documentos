@@ -14,7 +14,7 @@ st.caption("Turma Exclusiva para Mulheres - Outubro/2023 :cherry_blossom:")
 
 st.cache_data
 def gerar_df():
-    df = pd.read_excel('./data/rema.xlsx',
+    df = pd.read_excel('./analise_gastos_saude/streamlit/data/rema.xlsx',
                        engine='openpyxl')
                        #usecols='I:W')
                        #nrows=244)

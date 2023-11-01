@@ -10,7 +10,7 @@ st.markdown("---")
 
 @st.cache_data
 def gerar_df():
-    df = pd.read_excel('./data/variaveis_uf_ano.xlsx',
+    df = pd.read_excel('./analise_gastos_saude/streamlit/data/variaveis_uf_ano.xlsx',
                        engine='openpyxl',
                        usecols='A:F',
                        nrows=244)

@@ -11,8 +11,8 @@ st.markdown("---")
 figura1 = ''
 figura2 = ''
 
-arquivo1 = './fig2.pkl'
-arquivo2 = './fig.pkl'
+arquivo1 = './analise_gastos_saude/streamlit/fig2.pkl'
+arquivo2 = './analise_gastos_saude/streamlit/fig.pkl'
 
 col1, col2 = st.columns(2)
 
